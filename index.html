@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <title>Karta godzin pracy</title>
+        <meta charset="utf-8"/>
+         <meta name="viewport" content="width=device-width, initial-scale=.5" />
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    </head>
+<body>
+    <div id="content">
+        <div id="nag">
+            <p id="pbu" class="f1"><input id="ibu" type="text" value="Budowa S6 Gdynia"></input></p>
+            <p class="nag">KARTA GODZIN PRACY</p>
+            <div id="cleaner"></div>
+        </div>
+        <p id='prac' class="f1" style="margin-right:47%">PRACOWNIK: </p>
+        <p id='stan' class="f1" style="margin-right:57%">STANOWISKO: </p>
+    </div>
+    <div id="wybor"><strong><i> Wybierz miesiąc i rok:</i></strong></br> <input id="edit" type="month" /> <input type="button" class="input" value="OK" onclick="gen()"/> 
+        
+    </div></br>
+  <table id="tabela">
+            <tr>
+                <td style="width:6%">Lp.</td>
+                <td style="width:18%">Data</td>
+                <td >Rozpoczęcie</td>
+                <td >Zakończenie</td>
+                <td>Ilość godzin</td>
+                <td style="width:13%">Podpis</td>
+                <td style="width:14%">UWAGI</td>
+            </tr>
+   </table></br></br></br>
+   <div class="bott">POTWIERDZENIE</div><div class='right'>DYREKTOR KONTRAKTU</div><div style="clear:both"></div>
+ <script src='skrypt.js'></script>    
+        
+ </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
     <head>
-        <title>Karta godzin pracy</title>
+        <title>WNIOSEK URLOPOWY</title>
         <meta charset="utf-8"/>
          <meta name="viewport" content="width=device-width, initial-scale=.5" />
          <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,30 +11,48 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     </head>
 <body>
-    <div id="content">
-        <div id="nag">
-            <p id="pbu" class="f1"><input id="ibu" type="text" value="Budowa S6 Gdynia"></input></p>
-            <p class="nag">KARTA GODZIN PRACY</p>
-            <div id="cleaner"></div>
-        </div>
-        <p id='prac' class="f1" style="margin-right:47%">PRACOWNIK: </p>
-        <p id='stan' class="f1" style="margin-right:57%">STANOWISKO: </p>
+        <div class="contener">
+        <div class="polaqua"><img src="polaqua.png" alt="polaqua"></div><div class="title">WNIOSEK URLOPOWY</div><br/>
+        <div clas="content">
+                <p>IMIĘ I NAZWISKO<input id ="employee" list="workers"/><datalist id="workers"><option value="Andrzejewski Artur"/><option value="Bajor Paweł"/><option value="Cholewiński Przemysław"/><option value="Frąk Jakub"/><option value="Gronostaj Tomasz"/><option value="Kraska Paweł"/><option value="Latała Zbigniew"/><option value="Rybiński Jacek"/><option value="-------------------------------------------"/><option value="Bober Rajmund"/><option value="Bujak Dariusz"/><option value="Dychała Grzegorz"/><option value="Firosz Sylwester"/><option value="Gryz Marcin"/><option value="Janus Marek"/><option value="Jęczara Marcin"/><option value="Kubicki Paweł"/><option value="Łebek Bogusław"/><option value="Mazurczak Grzegorz"/><option value="Pokój Mariusz"/><option value="Sowa Marek"/><option value="-------------------------------------------"/><option value="Majtyka Krzysztof"/><option value="Popiel Lucjan"/><option value="Radomski Leszek"/><option value="Stępnik Andrzej"/><option value="Wiśniewski Sylwester"/></datalist></p>
+
+                <p>DZIAŁ<input id="build" list="list"></input><datalist id="list"><option>Budowa S6 Gdynia</option><option>Budowa A2 Siedlce</option><option>Budowa S61 Podborze - Śniadowo</option></datalist></p>
+
+                <p>STANOWISKO<input id="engagement" list="engagements"/><datalist id="engagements"><option value="operator układarki"/><option value="operator walca"/><option value="pomocnik"/><option value="operator stołu"/><option value="operator sprzętu"/><option value="operator"/><option value="koszowy"/><option value="robotnik drogowy"/><option value="brygadzista"/><option value="majster"/><datalist/></p>
+
+                <p>PROSZĘ O UDZIELENIE MI NALEŻNEGO URLOPU<input class="no_space" id="urlop" list="urlopy"/><datalist id="urlopy"><option>WYPOCZYNKOWEGO</option><option>OKOLICZNOŚCIOWEGO</option><option>BEZPŁATNEGO</option></datalist> ZA</p>
+
+                <p><input class="no_space" type="number" value="2022"/>R/<input class="no_space" type="number" value="2022"/>R W DNIACH OD<input class="no_space" type="date"/>DO<input class="no_space" type="date" /></p>
+
+                <p>UZASADNIENIE<input type="text" class="no_space"/></p>
+
+                <p class="to_right"><input class="no_space" type="text"/>, DNIA<input class="no_space" type="date"/>........................................................</p>
+
+                <div class="label_tn"><i>/MIEJSCOWOŚĆ/</i></div><div class="sign">/PODPIS PRACOWNIKA/</div></p>
+
+                <div class="kadry"><p>PRZYSŁUGUJE .................. DNI URLOPU WYPOCZYNKOWEGO / OKOLICZNOŚCIOWEGO / BEZPŁATNEGO.</p>
+                <p>WYKORZYSTANO .................. DNI. POZOSTAŁO DO WYKORZYSTANIA .................. DNI.</p></div>
+
+                <p class="to_right">.........................................................................................</p>
+                <p class="sign_kad">/PODPIS PRACOWNIKA DZIAŁU KADR/</p>
+
+                <p class="under">NA ZASTĘPSTWO WYZNACZAM PANA/IĄ ................................................................................................................</p>
+
+                <p>UDZIELAM .................. DNI URLOPU ................</p>
+
+                <p class="to_right">.............................................................................................</p>
+                <p class="sign_prz">/PODPIS BEZPOŚREDNIEGO PRZEŁOŻONEGO/</p>
+
+          </div>
+
+
+
+
+
+
+
+
     </div>
-    <div id="wybor"><strong><i> Wybierz miesiąc i rok:</i></strong></br> <input id="edit" type="month" /> <input type="button" class="input" value="OK" onclick="gen()"/> 
-        
-    </div></br>
-  <table id="tabela">
-            <tr>
-                <td style="width:6%">Lp.</td>
-                <td style="width:18%">Data</td>
-                <td >Rozpoczęcie</td>
-                <td >Zakończenie</td>
-                <td>Ilość godzin</td>
-                <td style="width:13%">Podpis</td>
-                <td style="width:14%">UWAGI</td>
-            </tr>
-   </table></br></br></br>
-   <div class="bott">POTWIERDZENIE</div><div class='right'>DYREKTOR KONTRAKTU</div><div style="clear:both"></div>
  <script src='skrypt.js'></script>    
         
  </body>

@@ -8,30 +8,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
         <link href='style.css' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
 <body>
         <div class="contener">
-        <div class="polaqua"><img src="polaqua.png" alt="polaqua"></div><div class="title">WNIOSEK URLOPOWY</div><br/>
+        <div class="polaqua"><img src="polaqua.png" alt="polaqua"></div><div class="title">WNIOSEK URLOPOWY</div><br/><div id="button"><button id="write" onclick="zapisz()">ZAPISZ</button></div>
         <div clas="content">
-                <p>IMIĘ I NAZWISKO<input id ="employee" list="workers"/><datalist id="workers"><option value="Andrzejewski Artur"/><option value="Bajor Paweł"/><option value="Cholewiński Przemysław"/><option value="Frąk Jakub"/><option value="Gronostaj Tomasz"/><option value="Kraska Paweł"/><option value="Latała Zbigniew"/><option value="Rybiński Jacek"/><option value="-------------------------------------------"/><option value="Bober Rajmund"/><option value="Bujak Dariusz"/><option value="Dychała Grzegorz"/><option value="Firosz Sylwester"/><option value="Gryz Marcin"/><option value="Janus Marek"/><option value="Jęczara Marcin"/><option value="Kubicki Paweł"/><option value="Łebek Bogusław"/><option value="Mazurczak Grzegorz"/><option value="Pokój Mariusz"/><option value="Sowa Marek"/><option value="-------------------------------------------"/><option value="Majtyka Krzysztof"/><option value="Popiel Lucjan"/><option value="Radomski Leszek"/><option value="Stępnik Andrzej"/><option value="Wiśniewski Sylwester"/></datalist></p>
+                <p>IMIĘ I NAZWISKO<span id="pracow"><input id ="employee" list="workers"/><datalist id="workers"><option value="Andrzejewski Artur"/><option value="Bajor Paweł"/><option value="Cholewiński Przemysław"/><option value="Frąk Jakub"/><option value="Gronostaj Tomasz"/><option value="Kraska Paweł"/><option value="Latała Zbigniew"/><option value="Rybiński Jacek"/><option value="-------------------------------------------"/><option value="Bober Rajmund"/><option value="Bujak Dariusz"/><option value="Dychała Grzegorz"/><option value="Firosz Sylwester"/><option value="Gryz Marcin"/><option value="Janus Marek"/><option value="Jęczara Marcin"/><option value="Kubicki Paweł"/><option value="Łebek Bogusław"/><option value="Mazurczak Grzegorz"/><option value="Pokój Mariusz"/><option value="Sowa Marek"/><option value="-------------------------------------------"/><option value="Majtyka Krzysztof"/><option value="Popiel Lucjan"/><option value="Radomski Leszek"/><option value="Stępnik Andrzej"/><option value="Wiśniewski Sylwester"/></datalist></span></p>
 
-                <p>DZIAŁ<input id="build" list="list"></input><datalist id="list"><option>Budowa S6 Gdynia</option><option>Budowa A2 Siedlce</option><option>Budowa S61 Podborze - Śniadowo</option></datalist></p>
+                <p>DZIAŁ<span id="budowa"><input id="build" list="list"></input><datalist id="list"><option>Budowa S6 Gdynia</option><option>Budowa A2 Siedlce</option><option>Budowa S61 Podborze - Śniadowo</option></datalist></span></p>
 
-                <p>STANOWISKO<input id="engagement" list="engagements"/><datalist id="engagements"><option value="operator układarki"/><option value="operator walca"/><option value="pomocnik"/><option value="operator stołu"/><option value="operator sprzętu"/><option value="operator"/><option value="koszowy"/><option value="robotnik drogowy"/><option value="brygadzista"/><option value="majster"/><datalist/></p>
+                <p>STANOWISKO<span id="stan"><input id="engagement" list="engagements"/><datalist id="engagements"><option value="operator układarki"/><option value="operator walca"/><option value="pomocnik"/><option value="operator stołu"/><option value="operator sprzętu"/><option value="operator"/><option value="koszowy"/><option value="robotnik drogowy"/><option value="brygadzista"/><option value="majster"/><datalist/></span></p>
 
-                <p>PROSZĘ O UDZIELENIE MI NALEŻNEGO URLOPU<input class="no_space" id="urlop" list="urlopy"/><datalist id="urlopy"><option>WYPOCZYNKOWEGO</option><option>OKOLICZNOŚCIOWEGO</option><option>BEZPŁATNEGO</option></datalist> ZA</p>
+                <p>PROSZĘ O UDZIELENIE MI NALEŻNEGO URLOPU<span id="rodz_u" ><input class="no_space" id="urlop" list="urlopy"/><datalist id="urlopy"><option>WYPOCZYNKOWEGO</option><option>OKOLICZNOŚCIOWEGO</option><option>BEZPŁATNEGO</option></datalist></span> ZA</p>
 
-                <p><input class="no_space" type="number" value="2022"/>R/<input class="no_space" type="number" value="2022"/>R W DNIACH OD<input class="no_space" type="date"/>DO<input class="no_space" type="date" /></p>
+                <p><span id="rok1"><input id="r1" class="no_space" type="number" value="2022"/></span>R/<span id="rok2"><input id="r2" class="no_space" type="number" value="2022"/></span>R W DNIACH OD<span id="from"><input id="od" class="no_space" type="date"/></span>DO<span id="to"><input id="do" class="no_space" type="date" /></span></p>
 
-                <p>UZASADNIENIE<input type="text" class="no_space"/></p>
+                <p>UZASADNIENIE<span id="uzasad"><input id="uza" type="text" class="no_space"/></span></p>
 
-                <p class="to_right"><input class="no_space" type="text"/>, DNIA<input class="no_space" type="date"/>........................................................</p>
+                <p class="to_right"><input id='miej' class="no_space" type="text"/>, DNIA<input id="data" class="no_space" type="date"/>........................................................</p>
 
                 <div class="label_tn"><i>/MIEJSCOWOŚĆ/</i></div><div class="sign">/PODPIS PRACOWNIKA/</div></p>
 
                 <div class="kadry"><p>PRZYSŁUGUJE .................. DNI URLOPU WYPOCZYNKOWEGO / OKOLICZNOŚCIOWEGO / BEZPŁATNEGO.</p>
-                <p>WYKORZYSTANO .................. DNI. POZOSTAŁO DO WYKORZYSTANIA .................. DNI.</p></div>
+                <p>WYKORZYSTANO .................. DNI. POZOSTAŁO DO WYKORZYSTANIA .................. DNI.</p></div><br/>
 
                 <p class="to_right">.........................................................................................</p>
                 <p class="sign_kad">/PODPIS PRACOWNIKA DZIAŁU KADR/</p>

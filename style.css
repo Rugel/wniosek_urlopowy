@@ -22,6 +22,7 @@ font-weight:900 ;
     position: relative;
     border:solid 1px;
     padding: 20px;
+    padding-bottom: 10px;
     margin:auto;
     }
 
@@ -44,28 +45,49 @@ input[type=number]{
 }
 .to_right{
     text-align: end;
-    line-height: 50px;
+    line-height: 30px;
 }
 .label_tn{
     position: absolute;
     right: 448px;
-    top: 318px;
+    top: 310px;
 }
 .sign{
     position: absolute;
     right: 50px;
-    top: 318px;
+    top: 305px;
 }
 .sign_kad{
     position: absolute;
     right: 50px;
-    top: 430px;
+    top: 428px;
 }
 .sign_prz{
     position: absolute;
     right: 50px;
-    top: 556px;
+    top: 535px;
 }
+.kadry{
+    position: relative;
+    bottom: -20px;
+}
+#write, #druk{
+    position: absolute;
+    right:50px;
+    padding: 10px;
+    font-weight: 900;
+}
+.ins_dys{
+    margin-left: 100px;
+    font-weight: 900;
+    font-size: large;
+}
+.ins{
+    margin-left: 0px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
 
 @media print{
 #druk, #cleaner{

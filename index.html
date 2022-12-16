@@ -5,55 +5,45 @@
         <meta charset="utf-8"/>
          <meta name="viewport" content="width=device-width, initial-scale=.5" />
          <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
         <link href='style.css' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
-<body>
+    <body>
         <div class="contener">
-        <div class="polaqua"><img src="polaqua.png" alt="polaqua"></div><div class="title">WNIOSEK URLOPOWY</div><br/><div id="button"><button id="write" onclick="zapisz()">ZAPISZ</button></div>
-        <div clas="content">
-                <p>IMIĘ I NAZWISKO<span id="pracow"><input id ="employee" list="workers"/><datalist id="workers"><option value="Andrzejewski Artur"/><option value="Bajor Paweł"/><option value="Cholewiński Przemysław"/><option value="Frąk Jakub"/><option value="Gronostaj Tomasz"/><option value="Kraska Paweł"/><option value="Latała Zbigniew"/><option value="Rybiński Jacek"/><option value="-------------------------------------------"/><option value="Bober Rajmund"/><option value="Bujak Dariusz"/><option value="Dychała Grzegorz"/><option value="Firosz Sylwester"/><option value="Gryz Marcin"/><option value="Janus Marek"/><option value="Jęczara Marcin"/><option value="Kubicki Paweł"/><option value="Łebek Bogusław"/><option value="Mazurczak Grzegorz"/><option value="Pokój Mariusz"/><option value="Sowa Marek"/><option value="-------------------------------------------"/><option value="Majtyka Krzysztof"/><option value="Popiel Lucjan"/><option value="Radomski Leszek"/><option value="Stępnik Andrzej"/><option value="Wiśniewski Sylwester"/></datalist></span></p>
+            <div class="polaqua"><img src="polaqua.png" alt="polaqua"></div><div class="title">WNIOSEK URLOPOWY</div><br/><div id="button"><button id="write" onclick="zapisz()">ZAPISZ</button></div>
+            <div clas="content">
+                <p class="norm">IMIĘ I NAZWISKO<span id="pracow"><input id ="employee" list="workers"/><datalist id="workers"><option value="Artur Andrzejewski"/><option value="Paweł Bajor"/><option value="Przemysław Cholewiński"/><option value="Jakub Frąk"/><option value="Tomasz Gronostaj"/><option value="Paweł Kraska"/><option value="Zbigniew Latała"/><option value="Jacek Rybiński"/><option value="-------------------------------------------"/><option value="Rajmund Bober"/><option value="Dariusz Bujak"/><option value="Grzegorz Dychała"/><option value="Sylwester Firosz"/><option value="Marcin Gryz"/><option value="Marek Janus"/><option value="Marcin Jęczara"/><option value="Paweł Kubicki"/><option value="Bogusław Łebek"/><option value="Grzegorz Mazurczak"/><option value="Mariusz Pokój"/><option value="Marek Sowa"/><option value="-------------------------------------------"/><option value="Krzysztof Majtyka"/><option value="Lucjan Popiel"/><option value="Leszek Radomski"/><option value="Andrzej Stępnik"/><option value="Sylwester Wiśniewski"/></datalist></span></p>
 
-                <p>DZIAŁ<span id="budowa"><input id="build" list="list"></input><datalist id="list"><option>Budowa S6 Gdynia</option><option>Budowa A2 Siedlce</option><option>Budowa S61 Podborze - Śniadowo</option></datalist></span></p>
+                <p class="norm">DZIAŁ<span id="budowa"><input id="build" list="list"></input><datalist id="list"><option>Budowa S6 Gdynia</option><option>Budowa A2 Siedlce</option><option>Budowa S61 Podborze - Śniadowo</option></datalist></span></p>
 
-                <p>STANOWISKO<span id="stan"><input id="engagement" list="engagements"/><datalist id="engagements"><option value="operator układarki"/><option value="operator walca"/><option value="pomocnik"/><option value="operator stołu"/><option value="operator sprzętu"/><option value="operator"/><option value="koszowy"/><option value="robotnik drogowy"/><option value="brygadzista"/><option value="majster"/><datalist/></span></p>
+                <p class="norm">STANOWISKO<span id="stan"><input id="engagement" list="engagements"/><datalist id="engagements"><option value="operator układarki"/><option value="operator walca"/><option value="pomocnik"/><option value="operator stołu"/><option value="operator sprzętu"/><option value="operator"/><option value="koszowy"/><option value="robotnik drogowy"/><option value="brygadzista"/><option value="majster"/><datalist/></span></p>
 
-                <p>PROSZĘ O UDZIELENIE MI NALEŻNEGO URLOPU<span id="rodz_u" ><input class="no_space" id="urlop" list="urlopy"/><datalist id="urlopy"><option>WYPOCZYNKOWEGO</option><option>OKOLICZNOŚCIOWEGO</option><option>BEZPŁATNEGO</option></datalist></span> ZA</p>
+                <p class="norm">PROSZĘ O UDZIELENIE MI NALEŻNEGO URLOPU<span id="rodz_u" ><input class="no_space" id="urlop" list="urlopy"/><datalist id="urlopy"><option>WYPOCZYNKOWEGO</option><option>OKOLICZNOŚCIOWEGO</option><option>BEZPŁATNEGO</option></datalist></span> ZA</p>
 
-                <p><span id="rok1"><input id="r1" class="no_space" type="number" value="2022"/></span>R/<span id="rok2"><input id="r2" class="no_space" type="number" value="2022"/></span>R W DNIACH OD<span id="from"><input id="od" class="no_space" type="date"/></span>DO<span id="to"><input id="do" class="no_space" type="date" /></span></p>
+                <p class="norm"><span id="rok1"><input id="r1" class="no_space" type="number" value="2022"/></span>R/<span id="rok2"><input id="r2" class="no_space" type="number" value="2022"/></span>R W DNIACH OD<span id="from"><input id="od" class="no_space" type="date"/></span>DO<span id="to"><input id="do" class="no_space" type="date" /></span></p>
 
-                <p>UZASADNIENIE<span id="uzasad"><input id="uza" type="text" class="no_space"/></span></p>
+                <p class="norm">UZASADNIENIE<span id="uzasad"><input id="uza" type="text" class="no_space"/></span></p>
 
-                <p class="to_right"><input id='miej' class="no_space" type="text"/>, DNIA<input id="data" class="no_space" type="date"/>........................................................</p>
+                <p class="width"><span id="msc"><input id='miej' class="no_space" type="text"/></span>, DNIA<span id="dt"><input id="data" class="no_space" type="date"/></span>........................................................</p>
 
-                <div class="label_tn"><i>/MIEJSCOWOŚĆ/</i></div><div class="sign">/PODPIS PRACOWNIKA/</div></p>
+                <div class="label_tn"><i>/MIEJSCOWOŚĆ/</i></div><div class="sign"><i>/PODPIS PRACOWNIKA/</i></div>
 
                 <div class="kadry"><p>PRZYSŁUGUJE .................. DNI URLOPU WYPOCZYNKOWEGO / OKOLICZNOŚCIOWEGO / BEZPŁATNEGO.</p>
                 <p>WYKORZYSTANO .................. DNI. POZOSTAŁO DO WYKORZYSTANIA .................. DNI.</p></div><br/>
 
-                <p class="to_right">.........................................................................................</p>
-                <p class="sign_kad">/PODPIS PRACOWNIKA DZIAŁU KADR/</p>
+                <p class="width">.........................................................................................</p>
+                <p class="sign_kad"><i>/PODPIS PRACOWNIKA DZIAŁU KADR/</i></p>
 
                 <p class="under">NA ZASTĘPSTWO WYZNACZAM PANA/IĄ ................................................................................................................</p>
 
                 <p>UDZIELAM .................. DNI URLOPU ................</p>
 
-                <p class="to_right">.............................................................................................</p>
-                <p class="sign_prz">/PODPIS BEZPOŚREDNIEGO PRZEŁOŻONEGO/</p>
-
-          </div>
-
-
-
-
-
-
-
-
-    </div>
- <script src='skrypt.js'></script>    
-        
- </body>
+                <p class="width">.............................................................................................</p>
+                <p class="sign_prz"><i>/PODPIS BEZPOŚREDNIEGO PRZEŁOŻONEGO/</i></p>
+            </div>
+        </div>
+        <script src='skrypt.js'></script>        
+    </body>
 </html>

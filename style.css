@@ -45,27 +45,30 @@ input[type=number]{
 }
 .to_right{
     text-align: end;
-    line-height: 30px;
 }
 .label_tn{
+    font-size: 12px;
     position: absolute;
-    right: 448px;
-    top: 310px;
+    right: 440px;
+    top: 315px;
 }
 .sign{
+    font-size: 12px;
     position: absolute;
     right: 50px;
-    top: 305px;
+    top: 315px;
 }
 .sign_kad{
+    font-size: 12px;
     position: absolute;
     right: 50px;
-    top: 428px;
+    top: 440px;
 }
 .sign_prz{
+    font-size: 12px;
     position: absolute;
     right: 50px;
-    top: 535px;
+    top: 546px;
 }
 .kadry{
     position: relative;
@@ -74,23 +77,32 @@ input[type=number]{
 #write, #druk{
     position: absolute;
     right:50px;
+    top:20px;
     padding: 10px;
     font-weight: 900;
 }
 .ins_dys{
     margin-left: 100px;
     font-weight: 900;
-    font-size: large;
 }
 .ins{
     margin-left: 0px;
     font-weight: 600;
-    line-height: 21px;
+}
+.to_r{
+    position: absolute;
+    right: 20px;
+}
+.norm{
+    line-height: 22px;
+}
+.width{
+    line-height: 30px;
+    text-align: end;
 }
 
-
 @media print{
-#druk, #cleaner{
+#druk {
 display:none;  
 }
 * {

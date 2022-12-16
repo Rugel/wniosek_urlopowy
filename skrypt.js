@@ -26,13 +26,13 @@ if(rodz_url=='WYPOCZYNKOWEGO')
        else if(rodz_url=='BEZPŁATNEGO'){document.getElementById('rodz_u').innerHTML=` <s>WYPOCZYNKOWEGO</s>  /<s>OKOLICZNOŚCIOWEGO</s> /<span class='ins'>${rodz_url}</span>`}
        else if(!rodz_url){document.getElementById('rodz_u').innerHTML='WYPOCZYNKOWEGO /OKOLICZNOŚCIOWEGO /BEZPŁATNEGO '};
 
-rok1?document.getElementById('rok1').innerHTML=`<span class='ins'> ${rok1} </span>`:document.getElementById('rok1').innerHTML='....................................';
+rok1?document.getElementById('rok1').innerHTML=`<span class='sm_space'> ${rok1} </span>`:document.getElementById('rok1').innerHTML='....................................';
 
-rok2?document.getElementById('rok2').innerHTML=`<span class='ins'> ${rok2} </span>`:document.getElementById('rok2').innerHTML='....................................';
+rok2?document.getElementById('rok2').innerHTML=`<span class='sm_space'> ${rok2} </span>`:document.getElementById('rok2').innerHTML='....................................';
 
-from?document.getElementById('from').innerHTML=`<span class='ins'> ${from} </span>`:document.getElementById('from').innerHTML='...........................................';
+from?document.getElementById('from').innerHTML=`<span class='space'> ${from} </span>`:document.getElementById('from').innerHTML='...........................................';
 
-to?document.getElementById('to').innerHTML=`<span class='ins'> ${to} </span>`:document.getElementById('to').innerHTML='...........................................';
+to?document.getElementById('to').innerHTML=`<span class='space'> ${to} </span>`:document.getElementById('to').innerHTML='...........................................';
 
 uzasad?document.getElementById('uzasad').innerHTML=`<span class='ins'> ${uzasad} </span>`:document.getElementById('uzasad').innerHTML='.....................................................................................................................................................................................';
 

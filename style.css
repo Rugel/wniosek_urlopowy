@@ -104,6 +104,11 @@ input[type=number]{
     margin-right: 25px;
     font-weight: 600;
 }
+.sm_space{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+}
 
 @media print{
 #druk {

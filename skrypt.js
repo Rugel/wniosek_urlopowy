@@ -36,8 +36,8 @@ to?document.getElementById('to').innerHTML=`<span class='ins'> ${to} </span>`:do
 
 uzasad?document.getElementById('uzasad').innerHTML=`<span class='ins'> ${uzasad} </span>`:document.getElementById('uzasad').innerHTML='.....................................................................................................................................................................................';
 
-miej?document.getElementById('msc').innerHTML=`<span class='ins'> ${miej} </span>`:document.getElementById('msc').innerHTML=`<span class='to_right'>.........................................................</span>`;
+miej?document.getElementById('msc').innerHTML=`<span class='space'> ${miej} </span>`:document.getElementById('msc').innerHTML=`<span class='to_right'>.........................................................</span>`;
 
-data?document.getElementById('dt').innerHTML=`<span class='ins'> ${data} </span>`:document.getElementById('dt').innerHTML='................................. ';
+data?document.getElementById('dt').innerHTML=`<span class='space'> ${data} </span>`:document.getElementById('dt').innerHTML='................................. ';
 
  }

@@ -86,7 +86,6 @@ input[type=number]{
     font-weight: 900;
 }
 .ins{
-    margin-left: 0px;
     font-weight: 600;
 }
 .to_r{
@@ -99,6 +98,11 @@ input[type=number]{
 .width{
     line-height: 30px;
     text-align: end;
+}
+.space{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 600;
 }
 
 @media print{

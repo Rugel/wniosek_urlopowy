@@ -2,7 +2,6 @@ body{
     font-family: 'Inter', sans-serif;
     font-size:14px;
     background-color: #fff;
-    box-sizing: border-box;
 }
 
 img{
@@ -19,6 +18,7 @@ font-weight:900 ;
 
 .contener{
     width: 800px;
+    height: 560px;
     position: relative;
     border:solid 1px;
     padding: 20px;

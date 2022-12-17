@@ -42,6 +42,9 @@ input[type=number]{
     width: 100px;
     margin-left: 0;
 }
+input:hover, #write, #druk{
+    cursor: pointer;
+}
 .to_right{
     text-align: end;
 }

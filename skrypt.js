@@ -38,6 +38,6 @@ uzasad?document.getElementById('uzasad').innerHTML=`<span class='ins'> ${uzasad}
 
 miej?document.getElementById('msc').innerHTML=`<span class='space'> ${miej} </span>`:document.getElementById('msc').innerHTML=`<span class='to_right'>.........................................................</span>`;
 
-data?document.getElementById('dt').innerHTML=`<span class='space'> ${data} </span>`:document.getElementById('dt').innerHTML='................................. ';
+data?document.getElementById('dt').innerHTML=`<span class='space'> ${data} </span>`:document.getElementById('dt').innerHTML=' ................................. ';
 
  }

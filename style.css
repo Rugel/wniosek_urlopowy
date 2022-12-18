@@ -2,6 +2,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-size:14px;
     background-color: #fff;
+    box-sizing: border-box;
 }
 
 img{
@@ -119,7 +120,7 @@ input:hover, #write, #druk{
 
 @media print{
     .contener{
-        position: static;
+        position: relative;
           }
     #druk {
         display:none;  
